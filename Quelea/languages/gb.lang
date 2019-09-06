@@ -691,6 +691,7 @@ db.song.preview.label=Database song preview
 db.song.preview.label.control=None
 db.song.preview.label.databasepreview=In database pane
 db.song.preview.label.previewpane=In preview pane
+slide.transition.label=Use fade transition between slides
 mobile.remote.heading=Mobile Remote
 interface.options.options=Interface Options
 general.interface.options=General Interface Options

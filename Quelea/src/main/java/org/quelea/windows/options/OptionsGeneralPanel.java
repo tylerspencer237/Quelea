@@ -46,6 +46,7 @@ import static org.quelea.windows.options.PreferencesDialog.getPositionSelector;
  *
  * @author Arvid
  */
+
 public class OptionsGeneralPanel {
     private BooleanProperty showSmallSongProperty;
     private DoubleProperty smallSongSizeSpinnerProperty;

@@ -2333,6 +2333,60 @@ public final class QueleaProperties extends Properties {
         return new File(getQueleaUserHome(), "notices");
     }
 
+    /**
+     * Set whether fade should be used.
+     *
+     * @param useFade true if fade should be used
+     */
+    public void setUseSlideTransition(boolean useFade) {
+        setProperty("use.fade", Boolean.toString(useFade));
+    }
+
+    /**
+     * Determine whether fade should be used.
+     *
+     * @return true if fade is enabled, false otherwise.
+     */
+    public boolean getUseSlideTransition() {
+        return Boolean.parseBoolean(getProperty("use.fade", "false"));
+    }
+
+    /**
+     * Set the slide transition in duration.
+     *
+     * @param millis milliseconds for fade-in effect.
+     */
+    public void setSlideTransitionInDuration(int millis) {
+        setProperty("slide.transition.duration.in", Integer.toString(millis));
+    }
+
+    /**
+     * Get the slide transition in duration.
+     *
+     * @return milliseconds for fade-in effect.
+     */
+    public int getSlideTransitionInDuration() {
+        return Integer.parseInt(getProperty("slide.transition.duration.in", "750"));
+    }
+
+    /**
+     * Get the slide transition out duration.
+     *
+     * @return milliseconds for fade-out effect.
+     */
+    public int getSlideTransitionOutDuration() {
+        return Integer.parseInt(getProperty("slide.transition.duration.out", "400"));
+    }
+
+    /**
+     * Set the slide transition out duration.
+     *
+     * @param millis milliseconds for fade-out effect.
+     */
+    public void setSlideTransitionOutDuration(int millis) {
+        setProperty("slide.transition.duration.out", Integer.toString(millis));
+    }
+
     public boolean getUseDarkTheme() {
         return Boolean.parseBoolean(getProperty(darkThemeKey, "false"));
     }
